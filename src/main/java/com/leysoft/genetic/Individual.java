@@ -4,6 +4,7 @@ import java.security.SecureRandom;
 import java.util.Arrays;
 import java.util.Random;
 import java.util.StringJoiner;
+import static java.lang.Math.*;
 
 public class Individual {
 
@@ -32,8 +33,7 @@ public class Individual {
     }
 
     private double function(double x) {
-        //return (Math.sin(x) * Math.pow(x - 2, 2)) + 3;
-        return  Math.tan(x) + 1;
+        return (sin(x) * pow(x - 2, 2)) + 3;
     }
 
     private double genesToNumber() {
